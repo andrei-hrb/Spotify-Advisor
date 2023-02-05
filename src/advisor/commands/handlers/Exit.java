@@ -11,7 +11,9 @@ public class Exit extends Command {
     }
 
     @Override
-    public void run() {
+    public void run() throws Exception {
+        super.run();
+
         Program program = Program.getInstance();
 
         program.exit();

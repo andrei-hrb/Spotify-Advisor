@@ -11,7 +11,7 @@ public class New extends Command {
     }
 
     @Override
-    public void run() {
+    public void run() throws Exception {
         super.run();
 
         System.out.println("""

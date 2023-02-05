@@ -12,6 +12,7 @@ public class Main {
         Program program = Program.getInstance();
 
         Commands commands = new Commands();
+        commands.addCommand(new Auth());
         commands.addCommand(new New());
         commands.addCommand(new Featured());
         commands.addCommand(new Categories());
@@ -26,7 +27,7 @@ public class Main {
             try {
                 commands.run(input.getInput());
             } catch (Exception e) {
-                System.out.println(e.toString());
+                System.out.println(e.getMessage());
             }
         }
     }

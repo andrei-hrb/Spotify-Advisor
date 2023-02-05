@@ -1,5 +1,7 @@
 package advisor.commands;
 
+import advisor.program.Program;
+
 public class Command {
 
     private String before;
@@ -32,9 +34,11 @@ public class Command {
         this.auth = auth;
     }
 
-    public void run() {
+    public void run() throws Exception {
+        if (this.hasAuth() && !Program.getInstance().isLoggedIn()) {
+            throw new Exception("Please, provide access for application.");
+        }
+
         System.out.println(this.getBefore());
-
-
     }
 }

@@ -25,6 +25,6 @@ public class Commands {
             }
         }
 
-        throw new Exception("command doesn't exists");
+        throw new Exception("Command doesn't exists.");
     }
 }

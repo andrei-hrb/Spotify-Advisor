@@ -6,6 +6,8 @@ public class Program {
 
     private boolean running;
 
+    private boolean loggedIn = false;
+
     private Program() {
         this.running = true;
     }
@@ -24,5 +26,13 @@ public class Program {
 
     public void exit() {
         this.running = false;
+    }
+
+    public boolean isLoggedIn() {
+        return this.loggedIn;
+    }
+
+    public void setLoggedIn(boolean loggedIn) {
+        this.loggedIn = loggedIn;
     }
 }

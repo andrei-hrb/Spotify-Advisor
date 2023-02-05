@@ -12,8 +12,18 @@ public class Playlists extends Command {
         this.setAuth(true);
     }
 
+    public String getPlaylist() {
+        return this.playlist;
+    }
+
+    public void setPlaylist(String playlist) {
+        this.playlist = playlist;
+
+        this.setBefore("---" + this.playlist.toUpperCase() + " PLAYLISTS---");
+    }
+
     @Override
-    public void run() {
+    public void run() throws Exception {
         this.setPlaylist(Input.getInstance().getData());
 
         super.run();
@@ -23,15 +33,5 @@ public class Playlists extends Command {
                 Rage Beats
                 Arab Mood Booster
                 Sunday Stroll""");
-    }
-
-    public String getPlaylist() {
-        return this.playlist;
-    }
-
-    public void setPlaylist(String playlist) {
-        this.playlist = playlist;
-
-        this.setBefore("---" + this.playlist.toUpperCase() + " PLAYLISTS---");
     }
 }
