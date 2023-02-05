@@ -1,12 +1,12 @@
 package advisor.commands.handlers;
 
-import advisor.program.Program;
 import advisor.commands.Command;
+import advisor.program.Program;
 
 public class Exit extends Command {
 
     public Exit() {
-        this.setName("---GOODBYE!---");
+        this.setBefore("---GOODBYE!---");
         this.setRegex("exit");
     }
 

@@ -2,18 +2,18 @@ package advisor.commands;
 
 public class Command {
 
-    private String name;
+    private String before;
 
     private String regex;
 
     private boolean auth = false;
 
-    public String getName() {
-        return this.name;
+    public String getBefore() {
+        return this.before;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBefore(String before) {
+        this.before = before;
     }
 
     public String getRegex() {
@@ -33,7 +33,7 @@ public class Command {
     }
 
     public void run() {
-        System.out.println(this.getName());
+        System.out.println(this.getBefore());
 
 
     }

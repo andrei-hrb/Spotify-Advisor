@@ -5,7 +5,7 @@ import advisor.commands.Command;
 public class New extends Command {
 
     public New() {
-        this.setName("---NEW RELEASES---");
+        this.setBefore("---NEW RELEASES---");
         this.setRegex("new");
         this.setAuth(true);
     }

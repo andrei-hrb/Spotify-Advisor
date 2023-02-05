@@ -5,8 +5,6 @@ import advisor.commands.handlers.*;
 import advisor.input.Input;
 import advisor.program.Program;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -22,7 +20,7 @@ public class Main {
 
         Input input = Input.getInstance();
 
-        while(program.isRunning()) {
+        while (program.isRunning()) {
             input.scanInput();
 
             try {

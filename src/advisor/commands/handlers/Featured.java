@@ -5,7 +5,7 @@ import advisor.commands.Command;
 public class Featured extends Command {
 
     public Featured() {
-        this.setName("---FEATURED---");
+        this.setBefore("---FEATURED---");
         this.setRegex("featured");
         this.setAuth(true);
     }

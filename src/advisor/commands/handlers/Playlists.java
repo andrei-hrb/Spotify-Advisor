@@ -32,6 +32,6 @@ public class Playlists extends Command {
     public void setPlaylist(String playlist) {
         this.playlist = playlist;
 
-        this.setName("---" + this.playlist.toUpperCase() + " PLAYLISTS---");
+        this.setBefore("---" + this.playlist.toUpperCase() + " PLAYLISTS---");
     }
 }

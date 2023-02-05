@@ -5,7 +5,7 @@ import advisor.commands.Command;
 public class Categories extends Command {
 
     public Categories() {
-        this.setName("---CATEGORIES---");
+        this.setBefore("---CATEGORIES---");
         this.setRegex("categories");
         this.setAuth(true);
     }
