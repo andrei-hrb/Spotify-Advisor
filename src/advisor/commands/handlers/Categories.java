@@ -7,6 +7,7 @@ public class Categories extends Command {
     public Categories() {
         this.setName("---CATEGORIES---");
         this.setRegex("categories");
+        this.setAuth(true);
     }
 
     @Override

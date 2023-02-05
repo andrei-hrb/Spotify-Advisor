@@ -14,8 +14,6 @@ public class Exit extends Command {
     public void run() {
         Program program = Program.getInstance();
 
-        System.out.println(this.getName());
-
         program.exit();
     }
 }

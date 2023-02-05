@@ -6,6 +6,8 @@ public class Command {
 
     private String regex;
 
+    private boolean auth = false;
+
     public String getName() {
         return this.name;
     }
@@ -22,7 +24,17 @@ public class Command {
         this.regex = regex;
     }
 
+    public boolean hasAuth() {
+        return this.auth;
+    }
+
+    public void setAuth(boolean auth) {
+        this.auth = auth;
+    }
+
     public void run() {
-        return;
+        System.out.println(this.getName());
+
+
     }
 }

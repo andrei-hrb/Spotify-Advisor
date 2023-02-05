@@ -7,11 +7,13 @@ public class New extends Command {
     public New() {
         this.setName("---NEW RELEASES---");
         this.setRegex("new");
+        this.setAuth(true);
     }
 
     @Override
     public void run() {
-        System.out.println(this.getName());
+        super.run();
+
         System.out.println("""
                 Mountains [Sia, Diplo, Labrinth]
                 Runaway [Lil Peep]

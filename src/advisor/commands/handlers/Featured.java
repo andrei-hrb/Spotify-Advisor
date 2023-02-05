@@ -7,11 +7,13 @@ public class Featured extends Command {
     public Featured() {
         this.setName("---FEATURED---");
         this.setRegex("featured");
+        this.setAuth(true);
     }
 
     @Override
     public void run() {
-        System.out.println(this.getName());
+        super.run();
+
         System.out.println("""
                 Mellow Morning
                 Wake Up and Smell the Coffee

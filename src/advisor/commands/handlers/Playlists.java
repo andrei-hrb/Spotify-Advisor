@@ -9,13 +9,15 @@ public class Playlists extends Command {
 
     public Playlists() {
         this.setRegex("playlists .*");
+        this.setAuth(true);
     }
 
     @Override
     public void run() {
         this.setPlaylist(Input.getInstance().getData());
 
-        System.out.println(this.getName());
+        super.run();
+
         System.out.println("""
                 Walk Like A Badass
                 Rage Beats
